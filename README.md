@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+1주차 미션 안내 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1️⃣ 개발 환경을 세팅해 주세요
+Vite 기반의 React + TypeScript 개발 환경을 구성하고,
+ESLint와 Prettier를 적용해 코드 품질과 스타일을 일관되게 유지할 수 있도록 세팅했습니다.
 
-## Available Scripts
+개발 환경
+- Vite
+- React
+- TypeScript
+- ESLint
+- Prettier
 
-In the project directory, you can run:
+2️⃣ 디렉토리 및 라우팅 구조를 잡아주세요
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+ ├─ assets/                # 이미지, 아이콘
+ ├─ components/
+ │   ├─ common/            # 전역 공통 UI
+ │   │   ├─ Button.tsx
+ │   │   ├─ Input.tsx
+ │   │   └─ ErrorText.tsx
+ │   └─ auth/              # 인증 관련 컴포넌트
+ │       └─ SignupForm.tsx
+ ├─ pages/                 # URL 단위 페이지
+ │   ├─ Signup.tsx
+ │   └─ Login.tsx
+ ├─ router/                # 라우팅 설정
+ │   └─ index.tsx
+ ├─ hooks/                 # 커스텀 훅
+ ├─ utils/                 # 유틸 함수
+ ├─ api/                   # API 로직
+ ├─ styles/                # 전역 스타일
+ ├─ App.tsx
+ └─ main.tsx
